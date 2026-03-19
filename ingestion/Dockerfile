@@ -5,5 +5,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
  
 COPY fetch_data.py .
+COPY kafka_producer.py .
  
 CMD ["python", "fetch_data.py"]
